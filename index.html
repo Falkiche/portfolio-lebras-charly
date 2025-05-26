@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charly Le Bras - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="nav-brand">
+            <h2>Charly Le Bras</h2>
+            <p>Développeur</p>
+            <p>Modeleur 3D</p>
+        </div>
+        
+        <ul class="nav-menu">
+            <li><a href="#projets" class="nav-link active">Projets</a></li>
+            <li><a href="#apropos" class="nav-link">À propos</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        
+        <div class="nav-footer">
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section id="projets" class="section">
+            <div class="section-header">
+                <h1>Mes Projets</h1>
+                <p>Cliquez sur un projet pour voir les détails</p>
+            </div>
+            
+            <div class="gallery">
+                <div class="project-item" data-project="Jardiworld">
+                    <img src="https://via.placeholder.com/300x200/4f46e5/ffffff?text=Restaurant" alt="Jardiworld">
+                    <div class="project-preview">
+                        <h3>Jardiworld</h3>
+                        <p>Tower Defense sur grille</p>
+                    </div>
+                </div>
+                
+                <div class="project-item" data-project="Lego-Breaker">
+                    <img src="https://via.placeholder.com/300x200/059669/ffffff?text=To-Do+App" alt="Lego-Breaker">
+                    <div class="project-preview">
+                        <h3>Lego-Breaker</h3>
+                        <p>Sculpteur VR</p>
+                    </div>
+                </div>
+                
+                <div class="project-item" data-project="Vapeur">
+                    <img src="https://via.placeholder.com/300x200/dc2626/ffffff?text=Blog" alt="Vapeur">
+                    <div class="project-preview">
+                        <h3>Vapeur</h3>
+                        <p>Blog avec CMS custom</p>
+                    </div>
+                </div>
+                
+                <div class="project-item" data-project="Forum-de-discussion">
+                    <img src="https://via.placeholder.com/300x200/7c3aed/ffffff?text=Memory" alt="Forum-de-discussion">
+                    <div class="project-preview">
+                        <h3>Forum de discussion</h3>
+                        <p>Site interactif d'échange et de discussion</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="apropos" class="section">
+            <div class="section-header">
+                <h1>À propos de moi</h1>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Je m'appelle Charly, j'ai 19 ans et je suis étudiant en IUT Informatique en Imagerie Numérique. 
+                        Passionné par le développement et la modélisation 3D depuis maintenant 5 ans, je créer des 
+                        décors, des personnages, pour différent type de projet. Je développe des sites web, des applications
+                        et des jeux-vidéo.
+                    </p>
+                </div>
+                
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Modélisation, Animation</h3>
+                        <ul>
+                            <li>Blender</li>
+                            <li>3DS Max</li>
+                            <li>Photoshop</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Développement</h3>
+                        <ul>
+                            <li>C++</li>
+                            <li>HTML, CSS, JS</li>
+                            <li>Python</li>
+                            <li>QML</li>
+                            <li>CSharp</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Outils</h3>
+                        <ul>
+                            <li>Visual Studio Code</li>
+                            <li>Pycharm</li>
+                            <li>Unity</li>
+                            <li>Unreal Engine</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="section-header">
+                <h1>Me contacter</h1>
+                <p>Une question ? Un projet ? N'hésitez pas !</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>Email</h3>
+                        <p>charly.lebras19@gmail.com</p>
+                    </div>
+                    
+                    
+                    <div class="contact-item">
+                        <h3>Lieu d'étude</h3>
+                        <p>Puy-en-Velay, France</p>
+                    </div>
+                </div>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label>Nom</label>
+                        <input type="text" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit">Envoyer le message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div class="project-panel" id="project-panel">
+        <div class="panel-header">
+            <h2 id="panel-title"></h2>
+            <button class="close-panel" id="close-panel">×</button>
+        </div>
+        
+        <div class="panel-content" id="panel-content">
+        </div>
+    </div>
+
+    <button class="mobile-menu-toggle" id="mobile-menu">☰</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
